@@ -33,7 +33,7 @@ const Home = (props) => {
   };
 
   const handleUpdate = (blog) => {
-    history.push(`/update/${blog._id}`)
+    history.push(`https://jmui-mernblogback.herokuapp.com/update/${blog._id}`)
   }
   return (
     <div>
