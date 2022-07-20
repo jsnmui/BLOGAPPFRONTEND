@@ -9,7 +9,7 @@ const Updateblog = (props) => {
 
   useEffect(() => {
     axios
-      .get(`https://jmui-mernblogback.herokuapp.com/${id}`, {
+      .get(`https://jmui-mernblogback.herokuapp.com/blogs/${id}`, {
         headers: {
           "x-auth-token": localStorage.getItem("userToken"),
         },
@@ -23,7 +23,7 @@ const Updateblog = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.put(`https://jmui-mernblogback.herokuapp.com/${id}`, blog, {
+    axios.put(`https://jmui-mernblogback.herokuapp.com/blogs/${id}`, blog, {
         headers: {
           'x-auth-token': localStorage.getItem("userToken")
         }
