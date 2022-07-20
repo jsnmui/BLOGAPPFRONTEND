@@ -17,7 +17,7 @@ const RegisterForm = (props) => {
     e.preventDefault()
     console.log(formData)
 
-    axios.post('http://localhost:5000/auth/registration', formData)
+    axios.post('https://jmui-mernblogback.herokuapp.com/auth/registration', formData)
     .then(res => {
         console.log(res.data)
 

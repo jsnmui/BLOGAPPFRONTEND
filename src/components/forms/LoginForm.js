@@ -17,7 +17,7 @@ const LoginForm = (props) => {
     e.preventDefault();
     console.log(formData);
 
-    axios.post("http://localhost:5000/auth/login", formData).then((res) => {
+    axios.post("https://jmui-mernblogback.herokuapp.com/auth/login", formData).then((res) => {
       console.log(res.data);
 
       if (res.data.token && res.data.user) {
