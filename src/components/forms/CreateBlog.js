@@ -9,7 +9,7 @@ const CreateBlog = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    axios.post('https://jmui-mernblogback.herokuapp.com/blogs', formData, {
+    axios.post('https://blogappbackend-8j2e.onrender.com/blogs', formData, {
         headers: {
           'x-auth-token': localStorage.getItem("userToken")
         }

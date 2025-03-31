@@ -2,7 +2,7 @@
 #  A MERN Blog APP
 ## About the app
 A Blog App, with full CRUD using NodeJS, Express, Mongoose, MongoDB, React.  Allows user to register though the auth route, where the user receives a token.  With the token the user can view and create blogs.  The user can update and delete the user's own blogs.  The user can also add comments and like a blog.
-This app is deployed on Heroku at [MERNBlogAPP](https://jmui-mernblog.herokuapp.com/ "MERNBlogAPP")
+This app is deployed on Render at [MERNBlogAPP](https://blogappfrontend-8j2e.onrender.com/ "MERNBlogAPP")
 
 ## Front-end Technologies Used
 * React - A JavaScript library for building user interfaces. React makes it easy to create interactive user interfaces. It allows for the creation of simple views for each state in an application. React will efficiently update and render just the right components when the data changes. 
@@ -63,18 +63,10 @@ These variables are needed in the .env file
 3. Click connect to get connection string,
 4. Add connection string to MONGODB_URI in .env file.
 
-### Install dependencies
-1. In Git Bash terminal, type npm init -y
-2. Type 'npm install' before each of the following:
-* express
-* mongoose
-* bcrypt
-* dotenv
-* jsonwebtoken
-* morgan
-* helmet
-* express-validator
-* cors
+### Install dependencies and Start Application
+1. Type 'npm install'
+2. Type 'npm start'
+
 
 ## Endpoints, Parameters, Schema
 ### Routes

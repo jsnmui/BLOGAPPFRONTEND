@@ -9,7 +9,7 @@ const Home = (props) => {
   const history = useHistory()
   useEffect(() => {
     axios
-      .get("https://jmui-mernblogback.herokuapp.com/blogs", {
+      .get("https://blogappbackend-8j2e.onrender.com/blogs", {
         headers: {
           "x-auth-token": localStorage.getItem("userToken"),
         },
@@ -20,7 +20,7 @@ const Home = (props) => {
 
   const handleDelete = (blog) => {
     axios
-      .delete(`https://jmui-mernblogback.herokuapp.com/blogs/${blog._id}`, {
+      .delete(`https://blogappbackend-8j2e.onrender.com/blogs/${blog._id}`, {
         headers: {
           "x-auth-token": localStorage.getItem("userToken"),
         },

@@ -17,7 +17,7 @@ const RegisterForm = (props) => {
     e.preventDefault()
     console.log(formData)
 
-    axios.post('https://jmui-mernblogback.herokuapp.com/auth/registration', formData)
+    axios.post('https://blogappbackend-8j2e.onrender.com/auth/registration', formData)
     .then(res => {
         console.log(res.data)
 
