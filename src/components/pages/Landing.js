@@ -9,18 +9,18 @@ const Landing = (props) => {
   const [hasAccount, setHasAccount] = useState(false);
   const {setUser} = props
  
- useEffect(() => {
-    axios
-      .get("https://api.giphy.com/v1/gifs/trending?api_key=OSsE1u9CyQcBk5DvCIWDvOFrrsnvRv1V&limit=1&rating=g")
-      .then((res) => setGiphys(res.data))
-      .catch((err) => console.error(err));
+//  useEffect(() => {
+//     axios
+//       .get("https://api.giphy.com/v1/gifs/trending?api_key=OSsE1u9CyQcBk5DvCIWDvOFrrsnvRv1V&limit=1&rating=g")
+//       .then((res) => setGiphys(res.data))
+//       .catch((err) => console.error(err));
     
-  }, []);
+//   }, []);
   
  
   return (
     <div>
-      <h1>Landing Page</h1>
+      <h1>Registration</h1>
 
       {hasAccount === false ? (
         <div>
@@ -34,7 +34,7 @@ const Landing = (props) => {
         <LoginForm setUser={setUser} />
       )}
 
-    {giphys && <GiphyList giphys={giphys} msg="GIPHY Gifs" />}
+    {/* {giphys && <GiphyList giphys={giphys} msg="GIPHY Gifs" />} */}
     </div>
   );
 };

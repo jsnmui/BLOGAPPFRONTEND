@@ -11,7 +11,6 @@ function App() {
 
   return (
     <div className="container">
-      <h1>Blogs Frontend</h1>
 
       <Switch>
         <Route exact path='/' render={routerProps => <Landing {...routerProps} setUser={setUser}/> } />

@@ -2,7 +2,7 @@
 #  A MERN Blog APP
 ## About the app
 A Blog App, with full CRUD using NodeJS, Express, Mongoose, MongoDB, React.  Allows user to register though the auth route, where the user receives a token.  With the token the user can view and create blogs.  The user can update and delete the user's own blogs.  The user can also add comments and like a blog.
-This app is deployed on Render at [MERNBlogAPP](https://blogappfrontend-8j2e.onrender.com/ "MERNBlogAPP")
+This app is deployed on Render at [MERNBloggingApp](https://blogappfrontend-z9br.onrender.com "MERNBloggingApp")
 
 ## Front-end Technologies Used
 * React - A JavaScript library for building user interfaces. React makes it easy to create interactive user interfaces. It allows for the creation of simple views for each state in an application. React will efficiently update and render just the right components when the data changes. 
