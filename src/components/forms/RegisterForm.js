@@ -42,9 +42,11 @@ const RegisterForm = (props) => {
           id="username"
           name="username"
           value={formData.username}
-          onChange={(e) =>
-            setFormData({ ...formData, [e.target.id]: e.target.value })
-          }
+          onChange={(e) => {
+            const updatedData = { ...formData, [e.target.id]: e.target.value };
+            console.log(updatedData); // Check the updated state
+            setFormData(updatedData);
+          }}
         />
         </div>
 
