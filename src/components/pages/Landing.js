@@ -34,7 +34,9 @@ const Landing = (props) => {
         <LoginForm setUser={setUser} />
       )}
 
+
     {giphys && <GiphyList giphys={giphys} />}
+
     </div>
   );
 };
