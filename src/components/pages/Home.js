@@ -38,37 +38,33 @@ const Home = (props) => {
   return (
     <div>
       <NavBar user={props.user} />
-      <h1>Home Page</h1>
+      <h1 className="text-center my-4">Home Page</h1>
 
       <CreateBlog setBlogs={setBlogs} blogs={blogs} />
 
       {blogs &&
         blogs.map((blog) => (
-          <div className="card" key={blog._id}>
+          <div className="card mb-3 shadow-sm" key={blog._id}>
             <div className="card-body">
-                <h5 className="card-title">{blog.blog_title}</h5>
-                
+                <h5 className="card-title fw-bold">{blog.blog_title}</h5>
                 <p className="card-text"> {blog.blog_content}</p>
                   {blog.creator_id === props.user._id && (
-                    <span
+                   <div className="d-flex gap-2 mt-2">
+                   <button
                       className="btn btn-danger"
                       onClick={() => handleDelete(blog)}
                     >
-                      x
-                    </span>
-                  )}{" "}
-                  
-                  {blog.creator_id === props.user._id && (
-                    <span
-                      className="btn btn-info"
-                      onClick={() => handleUpdate(blog)}
+                      Delete
+                    </button>
+                 <button
+                    className="btn btn-info"
+                    onClick={() => handleUpdate(blog)}
                     >
                       Update
-                    </span>
+                    </button>
+                    </div>
                   )}
-
-                
-             </div>   
+            </div>   
           </div>
         ))}
     </div>
