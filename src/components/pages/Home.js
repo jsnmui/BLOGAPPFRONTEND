@@ -44,8 +44,9 @@ const Home = (props) => {
 
       {blogs &&
         blogs.map((blog) => (
-          <div className="card mb-3 shadow-sm" key={blog._id}>
-            <div className="card-body">
+          <div className="col-12 col-md-6 col-lg-4 mb-3" key={blog._id}>
+           <div className="card h-100 shadow-sm">
+            <div className="card-body d-flex flex-column">
                 <h5 className="card-title fw-bold">{blog.blog_title}</h5>
                 <p className="card-text"> {blog.blog_content}</p>
                   {blog.creator_id === props.user._id && (
@@ -64,8 +65,9 @@ const Home = (props) => {
                     </button>
                     </div>
                   )}
-            </div>   
-          </div>
+            </div> 
+          </div>  
+         </div>
         ))}
     </div>
   );
